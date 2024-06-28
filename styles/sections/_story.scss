@@ -1,0 +1,110 @@
+.story{
+  padding-top: 60px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  &__title{
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 150%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 2px;
+      background-color: #00A4E5;
+    }
+    &-text{
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.13em;
+      text-align: center;
+      color: #48555b;
+    }
+  }
+  &__about{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 77px;
+    &-block{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+      &-title{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.01em;
+        color: #48555b;
+        & span{
+          color:  #16ace8;
+        }
+      }
+      &-text{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px;
+
+        // line-height: 23px;
+        line-height: 1.76923;
+        letter-spacing: 0.01em;
+        color: #48555b;
+      }
+    }
+    &-box{
+      width: 100%;
+      height: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+      gap: 30px;
+      &-item-1{
+        display: flex;
+        align-items: flex-start;
+        //justify-content: center;
+        padding-top: 15px;
+        background-image: url("/static/story1.png");
+        background-repeat: no-repeat;
+      }
+      &-item-2{
+        display: flex;
+        align-items: flex-start;
+        //justify-content: center;
+        padding-top: 15px;
+        background-image: url("/static/story2.png");
+        background-repeat: no-repeat;
+      }
+      &-item-3{
+        display: flex;
+
+        align-items: flex-start;
+        //justify-content: center;
+        padding-top: 15px;
+        background-image: url("/static/story3.png");
+        background-repeat: no-repeat;
+      }
+      &-title{
+
+        z-index: 1;
+        max-width: 100px;
+        height: 60px;
+        padding-left: 10px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29px;
+
+      }
+    }
+  }
+}

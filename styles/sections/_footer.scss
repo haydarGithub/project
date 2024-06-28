@@ -1,0 +1,133 @@
+.footer{
+  background-color: #141A20;
+  &__copyright{
+    padding: 23px;
+    &-text{
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: #fff;
+    }
+
+  }
+  &__wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__touch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    &-title{
+      padding: 30px;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      text-align: center;
+      color: #fff;
+    }
+    &-form{
+      display: flex;
+      &-input{
+        padding: 10px 15px;
+        border: 1px solid #979797;
+        width: 250px;
+        height: 40px;
+      }
+      &-button{
+        border: none;
+        width: 150px;
+        height: 40px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        background-color: #00A4E5;
+        &:hover{
+          background: #000;
+        }
+      }
+
+    }
+  }
+  &__contact{
+    padding: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    &-item{
+      //max-width: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 15px;
+      &-icons{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+        &-link{
+          width: 16px;
+          height: 16px;
+        }
+      }
+      &-title{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-align: center;
+        color: #fff;
+      }
+      &-logo{
+        height: 23px;
+      }
+      &-text{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 11px;
+
+        // line-height: 19px;
+        line-height: 1.72727;
+        letter-spacing: 0.08em;
+        color: #fff;
+      }
+      &-list{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        &-about{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          &-link{
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 11px;
+
+            // line-height: 25px;
+            line-height: 2.27273;
+            letter-spacing: 0.08em;
+            color: #fff;
+            &:hover{
+              color: #00a4e5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer-text{
+  width: 250px;
+}

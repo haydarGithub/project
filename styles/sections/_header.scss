@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+
+  &__nav {
+    width: 45%;
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-link {
+      height: 20px;
+      font-family: var(--second-family);
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.09em;
+      text-align: center;
+      color: #48555b;
+
+      &:hover {
+        font-size: 12px;
+        color: #00a4e5;
+      }
+    }
+  }
+}
